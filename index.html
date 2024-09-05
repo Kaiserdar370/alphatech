@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thapa Technical Code Sale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Thapa Technical Code Sale at 249rs Only</h1>
+            <p>Happy Independence Day 🎉 Are you looking for high-quality, ready-to-use website source code? Look no further! Our collection of more than 10+ projects & websites has everything you need to get started on your next project.</p>
+            <p>With responsive design, user-friendly navigation, and a range of powerful features and tools, these websites are sure to impress. And the best part? You can get access to the entire collection for just ₹249 wow.</p>
+            <p>Not only do you get the source code, all the videos are already uploaded on YouTube so you can learn and actually understand it. If you have any questions or need help getting started, let us know and we’ll be happy to assist.</p>
+            <p>So why wait? Get the source code for these top-quality projects & websites now and start building today!</p>
+        </div>
+        <div class="right-section">
+            <!-- Countdown Box with Live Timer -->
+            <div class="countdown-box">
+                <h3>Your Path to Full-Stack Success</h3>
+                <div class="countdown-timer">
+                    <span id="days">00</span>d :
+                    <span id="hours">00</span>h :
+                    <span id="minutes">00</span>m :
+                    <span id="seconds">00</span>s
+                </div>
+                <p>Time remaining to grab the deal!</p>
+            </div>
+            <ul class="features">
+                <li>HTML Complete Code - 2025</li>
+                <li>CSS Complete Code - 2025</li>
+                <li>JavaScript Complete Code</li>
+                <li>Bootstrap 5 Complete Code</li>
+                <li>Dynamic Website (PHP, MySQL)</li>
+                <li>Complete Responsive Website</li>
+                <li>React Course with 5 Projects - 2025</li>
+                <li>NodeJS & ExpressJS Complete Code</li>
+                <li>Next.js Project Code</li>
+                <li>MongoDB Complete Code - 2025</li>
+                <li>Dynamic Website (Node, MongoDB)</li>
+            </ul>
+            <form action="#">
+                <input type="text" placeholder="Enter name" required>
+                <input type="email" placeholder="Enter email" required>
+                <input type="text" placeholder="Enter phone" required>
+                <a href="https://paytm.me/r-SwlBf" target="_blank">
+                    <button type="button">Click to Pay / Download</button>
+                </a>
+            </form>
+            <a href="#" class="youtube-link">View On YouTube</a>
+        </div>
+    </div>
+
+    <!-- JavaScript for Countdown Timer -->
+    <script>
+        // Set the sale end date
+        var saleEndDate = new Date("Sep 30, 2024 23:59:59").getTime();
+
+        // Update the countdown every 1 second
+        var countdownFunction = setInterval(function() {
+            var now = new Date().getTime();
+            var timeLeft = saleEndDate - now;
+
+            // Time calculations for days, hours, minutes, and seconds
+            var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            // Display the result in the respective elements
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // If the countdown is finished, display a message
+            if (timeLeft < 0) {
+                clearInterval(countdownFunction);
+                document.querySelector(".countdown-timer").innerHTML = "SALE ENDED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
+
