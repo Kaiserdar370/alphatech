@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #EDE7F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.left-section h1 {
+    font-size: 1.8rem;
+    color: #6A1B9A;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+/* Countdown Box Styling */
+.countdown-box {
+    background-color: #F3E5F5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.countdown-box h3 {
+    font-size: 1.4rem;
+    color: #6A1B9A;
+    margin-bottom: 15px;
+}
+
+.countdown-timer {
+    font-size: 1.8rem;
+    color: #8E24AA;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.countdown-box p {
+    font-size: 1rem;
+    color: #4A148C;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.features li {
+    margin-bottom: 8px;
+    color: #4A148C;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CE93D8;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #8E24AA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+form button:hover {
+    background-color: #6A1B9A;
+}
+
+.youtube-link {
+    display: inline-block;
+    background-color: #AB47BC;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.youtube-link:hover {
+    background-color: #8E24AA;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-section, .right-section {
+        margin: 10px 0;
+    }
+
+    .left-section h1 {
+        font-size: 1.5rem;
+    }
+
+    form input, form button, .youtube-link {
+        width: 100%;
+        text-align: center;
+    }
+}
