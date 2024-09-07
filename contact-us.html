@@ -5,7 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Alpha Tech</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Contact Page Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f3f8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+            background-color: #f4f3f8;
+        }
+
+        h1 {
+            color: #6A1B9A;
+            font-weight: 600;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        .contact-details {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-card {
+            background-color: #6A1B9A;
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-card h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .contact-card p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .contact-card a {
+            color: #E3D7FF;
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #6A1B9A;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-social {
+            margin-bottom: 15px;
+        }
+
+        .footer-social p {
+            margin-bottom: 10px;
+        }
+
+        .footer-social a {
+            color: #E3D7FF;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer-social a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-copyright {
+            font-size: 14px;
+            color: #E3D7FF;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-details {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -27,20 +131,11 @@
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <div class="footer-card">
-                <div class="footer-links">
-                    <a href="terms-and-conditions.html">Terms and Conditions</a>
-                    <a href="disclaimer.html">Disclaimer</a>
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                    <a href="refund-policy.html">Refund Policy</a>
-                    <a href="contact-us.html">Contact Us</a>
-                </div>
-                <div class="footer-social">
-                    <p>Connect with us:</p>
-                    <a href="https://facebook.com" target="_blank">Facebook</a> |
-                    <a href="https://twitter.com" target="_blank">Twitter</a> |
-                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                </div>
+            <div class="footer-social">
+                <p>Connect with us:</p>
+                <a href="https://facebook.com" target="_blank">Facebook</a> |
+                <a href="https://twitter.com" target="_blank">Twitter</a> |
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
             </div>
             <div class="footer-copyright">
                 <p>&copy; 2024 Alpha Tech. All Rights Reserved.</p>
