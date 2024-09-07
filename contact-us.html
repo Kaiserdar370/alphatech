@@ -6,7 +6,6 @@
     <title>Contact Us - Alpha Tech</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* Contact Page Styling */
         body {
             margin: 0;
             padding: 0;
@@ -25,17 +24,8 @@
         h1 {
             color: #6A1B9A;
             font-weight: 600;
-        }
-
-        p {
-            color: #555;
-            font-size: 18px;
-        }
-
-        .contact-details {
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
+            font-size: 36px;
+            margin-bottom: 20px;
         }
 
         .contact-card {
@@ -44,102 +34,69 @@
             padding: 30px;
             border-radius: 12px;
             width: 350px;
+            margin: 0 auto;
+            margin-top: 40px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         .contact-card h2 {
-            font-size: 24px;
+            font-weight: 600;
             margin-bottom: 15px;
         }
 
         .contact-card p {
-            font-size: 18px;
-            margin: 10px 0;
+            font-weight: 300;
+            margin: 8px 0;
         }
 
         .contact-card a {
-            color: #E3D7FF;
+            color: #ffccf2;
             text-decoration: none;
+            font-weight: 500;
         }
 
         .contact-card a:hover {
             text-decoration: underline;
         }
 
-        /* Footer Styling */
+        /* Footer */
         footer {
             background-color: #6A1B9A;
-            padding: 20px;
             color: white;
-            text-align: center;
-        }
-
-        .footer-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .footer-social {
-            margin-bottom: 15px;
-        }
-
-        .footer-social p {
-            margin-bottom: 10px;
-        }
-
-        .footer-social a {
-            color: #E3D7FF;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        .footer-social a:hover {
-            text-decoration: underline;
-        }
-
-        .footer-copyright {
+            padding: 20px 0;
+            margin-top: 50px;
             font-size: 14px;
-            color: #E3D7FF;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .contact-details {
-                flex-direction: column;
-            }
+        footer a {
+            color: #ffccf2;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <!-- Main Content -->
     <div class="container">
         <h1>Contact Us</h1>
-        <p>If you have any queries, feel free to reach out to us. We’re here to help you!</p>
-        
-        <div class="contact-details">
-            <div class="contact-card">
-                <h2>Contact Information</h2>
-                <p><strong>Mobile:</strong> <a href="tel:+917298186986">+91 7298186986</a></p>
-                <p><strong>Email:</strong> <a href="mailto:kaiserdar357@gmail.com">kaiserdar357@gmail.com</a></p>
-                <p><strong>Address:</strong> Hukhlatri, Beerwah, Budgam</p>
-            </div>
+        <div class="contact-card">
+            <h2>Contact Information</h2>
+            <p><strong>Mobile:</strong> <a href="tel:+917298186986">+91 7298186986</a></p>
+            <p><strong>Email:</strong> <a href="mailto:kaiserdar357@gmail.com">kaiserdar357@gmail.com</a></p>
+            <p><strong>Address:</strong> Hukhlatri, Beerwah, Budgam</p>
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-social">
-                <p>Connect with us:</p>
-                <a href="https://facebook.com" target="_blank">Facebook</a> |
-                <a href="https://twitter.com" target="_blank">Twitter</a> |
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            </div>
-            <div class="footer-copyright">
-                <p>&copy; 2024 Alpha Tech. All Rights Reserved.</p>
-            </div>
+        <div>© 2024 Alpha Tech. All Rights Reserved.</div>
+        <div>Connect with us: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">LinkedIn</a>
         </div>
     </footer>
 
