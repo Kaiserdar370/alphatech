@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Alpha Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f3f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #6A1B9A;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-details {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .contact-details p {
+            font-size: 18px;
+            color: #6A1B9A;
+        }
+
+        .contact-details a {
+            text-decoration: none;
+            color: #8E24AA;
+            font-weight: bold;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Form Section */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input, textarea {
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        button {
+            padding: 12px 30px;
+            background-color: #8E24AA;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #9C27B0;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Contact Us Content -->
+    <div class="container">
+        <h1>Contact Us</h1>
+        <h2>We'd love to hear from you!</h2>
+        
+        <div class="contact-details">
+            <p>Phone: <a href="tel:+917298186986">7298186986</a></p>
+            <p>Email: <a href="mailto:kaiserdar357@gmail.com">kaiserdar357@gmail.com</a></p>
+        </div>
+
+        <form action="mailto:kaiserdar357@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Alpha Tech. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
