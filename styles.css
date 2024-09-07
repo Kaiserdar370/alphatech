@@ -143,5 +143,66 @@ form button:hover {
     form input, form button, .youtube-link {
         width: 100%;
         text-align: center;
+
+
+        /* Contact Page Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #f4f3f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #6A1B9A;
+    font-weight: 600;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+}
+
+.contact-details {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card {
+    background-color: #6A1B9A;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-card a {
+    color: #E3D7FF;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
     }
 }
+
